@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Made Food</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bodyDeliverys.css">
+    <link rel="stylesheet" href="headers.css">
+
+</head>
+<body>
+    <div class="header-section">
+        <div class="left-side-header">
+            <img src="image/logo2.jpg" class="logo-img">
+        </div>
+        <div class="middle-section">
+            <input type="text" class="search-button">
+            <button><img src="image/search-icon.png" class="search-icon-img"></button>
+        </div>
+        <div class="right-section">
+            
+            <a class="orders-link header-link" href="orders.html">
+                <span class="returns-text">Returns</span>
+                <span class="orders-text">& Orders</span>
+              </a>
+      
+              <a class="cart-link header-link" href="checkout.html">
+                <img class="cart-icon" src="image/cart-icon.png">
+                <div class="cart-quantity js-button-quantity">0</div>
+                <div class="cart-text">Cart</div>
+              </a>
+           
+          
+        </div>
+
+    </div>
+<div class="main">
+    <div class="products-grid
+     js-products-grid">
+        <div class="products-container">
+            <div class="product-image-container">
+                <img src="image/dosa.png" class="product-image">
+            </div>
+            <div class="product-name">
+                Dosa
+            </div>
+            <div class="product-rating-container">
+                <img class="product-rating-stars"
+                src="ratings/rating-50.png">
+                <div class="product-rating-count">
+                    101
+                </div>
+            </div>
+            <div class="product-price">
+                Price:50 Rupees
+            </div>
+            <div class="product-quantity-container">
+                <select>
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="product-spacer"></div>
+            <div class="added-to-cart js-added-to-cart-${product.name} " >
+                <img src="image/checkmark.png" >
+                Added
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="products-container"></div>
+    </div>
+</div>
+<script src="scripts/cart.js"></script>
+<script src="scripts/bodyDelivery.js"></script>
+</body>
+</html>
